@@ -60,7 +60,7 @@ server <- function(input, output, session) {
     data.frame(word = names(word_freq), freq = word_freq)
   })
   
-  # Render word cloud
+  # Render word cloud, the glorious word cloud
   output$cloud <- renderWordcloud2({
     req(processed_text())  # Ensure data is available
     wordcloud2(processed_text()[1:input$num_words, ], backgroundColor = input$bg_color)
