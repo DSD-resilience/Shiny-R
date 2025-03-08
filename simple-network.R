@@ -14,7 +14,7 @@ server <- function(input, output) {
     # Define Nodes
     nodes <- data.frame(id = 1:5, 
                         label = c("A", "B", "C", "D", "E"),
-                        color = c("red", "blue", "green", "orange", "purple"))
+                        color = c("red", "hotpink", "green", "orange", "purple"))
     
     # Define Edges (Connections)
     edges <- data.frame(from = c(1, 1, 2, 3, 4), 
