@@ -13,4 +13,4 @@ Encoding: UTF-8
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
-ProjectName: Shiny-Feature-Google-Charts
+ProjectName: Shiny-Features
