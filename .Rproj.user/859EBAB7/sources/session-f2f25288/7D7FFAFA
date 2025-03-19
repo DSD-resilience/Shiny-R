@@ -3,7 +3,7 @@
     "path": "/cloud/project/Explorable_One/app.R",
     "project_path": "Explorable_One/app.R",
     "type": "r_source",
-    "hash": "1416463701",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1665255991862.0,
@@ -12,7 +12,7 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "11,71",
+        "cursorPosition": "12,50",
         "scrollLine": "0"
     },
     "folds": "",
