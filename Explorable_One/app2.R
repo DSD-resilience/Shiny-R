@@ -13,12 +13,12 @@ ui <- fluidPage(
       # Dropdown menu to select X variable
       selectInput("xvar", "Select X-axis variable:", 
                   choices = names(iris)[1:4], 
-                  selected = "Sepal.Length"),
+                  selected = "Petal.Length"),
       
       # Dropdown menu to select Y variable
       selectInput("yvar", "Select Y-axis variable:", 
                   choices = names(iris)[1:4], 
-                  selected = "Sepal.Width"),
+                  selected = "Petal.Width"),
       
       # Checkbox to show/hide the regression line
       checkboxInput("show_lm", "Show Regression Line", FALSE)
@@ -43,7 +43,7 @@ server <- function(input, output) {
     # Add regression line if checked
     if (input$show_lm) {
       model <- lm(iris[[input$yvar]] ~ iris[[input$xvar]])
-      abline(model, col = "hotpink", lwd = 2)
+      abline(model, col = "green", lwd = 2)
     }
   })
 }
