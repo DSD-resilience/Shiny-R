@@ -1,0 +1,55 @@
+---
+title: "Shiny-Widget-Color-Wheel-Documentation"
+format: html
+editor: visual
+---
+
+## Input Alternative to a Slider
+
+-   **Interactive Color Wheel:** Instead of a slider, this widget uses a circular color wheel. Users can drag a small circular "picker" around the wheel to select a color.
+
+-   **Drag-and-Drop Interaction:** The `input$colorPicker_drag` event captures the mouse coordinates as the user drags the picker.
+
+-   **HSV Color Conversion:** The angle and distance of the picker from the center of the wheel are converted into HSV (Hue, Saturation, Value) color values.
+
+-   **Dynamic Color Plot:** The selected color is displayed in a separate plot, providing visual feedback.
+
+-   **Javascript Interaction:** Javascript is used to facilitate the drag and drop functionality.
+
+-   **Randomization:** A button is included to randomize the color picker's location.
+
+**Explanation:**
+
+1.  **UI:**
+
+    -   A `div` element is used to create the circular color wheel with a gradient background.
+
+    -   Another `div` element, `colorPicker`, is used as the draggable color picker.
+
+    -   `actionButton` to randomize the color.
+
+    -   `textOutput` to display the color.
+
+    -   `plotOutput` to show the color plot.
+
+    **Server:**
+
+    -   `color_values` reactive value stores the picker's x and y coordinates.
+
+    -   `observeEvent(input$randomize)` updates the coordinates with random values.
+
+    -   `observeEvent(input$colorPicker_drag)` updates the coordinates based on the drag.
+
+    -   `renderPlot()` calculates the angle and radius of the picker, converts them to HSV, and displays the color in a plot.
+
+    -   `session$sendCustomMessage` and javascript code is used to facilitate the drag and drop functionality.
+
+    -   The `session$onSessionEnded` and `session$onFlushed` functions are used to add and remove the drag functionality.
+
+**To Run:**
+
+1.  Save the code as an R file (e.g., `color_wheel.R`).
+
+2.  Run `shiny::runApp("color_wheel.R")` in your R console.
+
+This example provides a unique and interactive way to select colors within a Shiny application, going beyond the traditional slider input.
