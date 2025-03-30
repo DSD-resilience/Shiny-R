@@ -1,5 +1,9 @@
 library(shiny)
 
+# This is the simplest mult-player game
+# A common bug from more complex versions comes from reactiveValue() with no arguments inside
+# Another common bug is not placing reactiveValue() inside the actual server logic
+
 # UI
 ui <- fluidPage(
   titlePanel("Simple Emoji Tic-Tac-Toe"),
