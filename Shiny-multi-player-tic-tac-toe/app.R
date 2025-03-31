@@ -1,6 +1,6 @@
 library(shiny)
 
-# This is the simplest mult-player game
+# This is the simplest multi-player game
 # A common bug from more complex versions comes from reactiveValue() with no arguments inside
 # Another common bug is not placing reactiveValue() inside the actual server logic
 
