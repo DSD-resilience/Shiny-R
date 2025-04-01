@@ -1,4 +1,4 @@
-# A dial in standard pre-made code tends to be gauge.
+# A 'dial' using current pre-made code tends to be gauge.
 
 library(shiny)
 library(flexdashboard)  # for gauge()
