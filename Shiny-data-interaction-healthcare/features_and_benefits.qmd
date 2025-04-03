@@ -1,0 +1,25 @@
+---
+title: "healthcare app features and benefits"
+format: html
+editor: visual
+---
+
+## Why This Healthcare App?
+
+**Key Features:**
+
+-   **Interactive Time-Series Plot:** Uses `plotly` to create an interactive plot that allows zooming and hovering over data points.
+
+-   **Data Table:** Uses `DT` to display the filtered data in a sortable and searchable table.
+
+**Benefits:**
+
+-   **Improved Patient Monitoring:** Enables clinicians to quickly identify changes in patient vital signs and trends.
+
+-   **Enhanced Decision Support:** Provides clinicians with the data they need to make informed decisions about patient care.
+
+-   **Better Data Exploration:** Allows clinicians to explore patient data in an interactive and intuitive way.
+
+-   **Customization:** The widget can be easily customized to display other types of healthcare data.  
+
+This type of Shiny widget is highly valuable for improving patient care, enhancing decision support, and facilitating data-driven healthcare practices.
